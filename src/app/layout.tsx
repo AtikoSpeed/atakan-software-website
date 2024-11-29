@@ -1,4 +1,5 @@
 import "./globals.css";
+import Header from "./Header";
 
 export default function RootLayout({
   children,
@@ -7,7 +8,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased grid justify-center`}>{children}</body>
+      <body className={`antialiased grid justify-center`}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
