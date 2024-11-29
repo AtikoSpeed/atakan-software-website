@@ -49,4 +49,6 @@ npm run dev
 
 ## License
 
-All rights reserved.
+© 2024 AtikoSpeed
+
+This code is **copyrighted material** provided for **viewing and learning purposes only**. For full details, see the [LICENSE](./LICENSE) file.
