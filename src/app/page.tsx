@@ -1,4 +1,10 @@
 import Main from "./Main";
+import Navbar from "./Navbar";
 export default function Home() {
-  return <Main />;
+  return (
+    <>
+      <Navbar />
+      <Main />
+    </>
+  );
 }

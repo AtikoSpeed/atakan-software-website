@@ -7,7 +7,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased flex justify-center`}>{children}</body>
+      <body className={`antialiased grid justify-center`}>{children}</body>
     </html>
   );
 }
