@@ -17,7 +17,7 @@ export default function Main() {
             <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
               FRONTEND DEVELOPER
             </h1>
-            <p className="mt-10 text-xl text-muted-foreground">
+            <p className="mt-10 text-xl text-foreground">
               Crafting seamless, user-friendly interfaces with a passion for
               modern web design and cutting-edge technologies. I specialize in
               transforming ideas into responsive, dynamic websites that deliver

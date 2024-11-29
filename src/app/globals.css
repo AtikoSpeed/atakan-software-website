@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: Ubuntu, sans-serif;
+  font-family: "Space Mono", Ubuntu, sans-serif;
 }
 
 @layer base {
@@ -51,4 +51,11 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.glow {
+  color: #ded;
+  text-shadow:
+    0 0 7px #0fa,
+    0 0 21px #0fa;
 }
