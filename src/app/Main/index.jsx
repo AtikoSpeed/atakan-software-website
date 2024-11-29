@@ -3,7 +3,13 @@ import Image from "next/image";
 
 export default function Main() {
   return (
-    <main>
+    <main className="bg-backimage">
+      <Image
+        src="/nightsky.jpg"
+        alt="Background Image"
+        fill={true}
+        className="h-screen w-screen -z-10 object-cover brightness-50 contrast-150"
+      />
       {/* Hero */}
       <div className="container h-screen py-24 lg:py-32 flex items-center">
         {/* Grid */}
