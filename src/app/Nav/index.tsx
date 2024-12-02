@@ -14,12 +14,12 @@ export default function Nav() {
         <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Birin
+              Home
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
+          <Link href="/Portfolio" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               İkin
             </NavigationMenuLink>

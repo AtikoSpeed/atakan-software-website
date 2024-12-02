@@ -1,8 +1,8 @@
-import Nav from "../Nav";
+import Nav from "@/app/Nav";
 
 export default function Header() {
   return (
-    <header>
+    <header className="w-100 flex justify-center">
       <div className="container grid grid-flow-col fixed">
         <div className="flex justify-between items-center py-4">
           <h1 className="text-3xl font-bold glow">Atakan</h1>

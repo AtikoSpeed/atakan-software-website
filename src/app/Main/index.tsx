@@ -3,16 +3,16 @@ import Image from "next/image";
 
 export default function Main() {
   return (
-    <main className="bg-backimage">
+    <main className="relative snap-always snap-start h-screen max-w-none w-screen">
       <Image
         src="/nightsky.jpg"
         alt="Background Image"
         fill={true}
-        className="h-screen w-screen -z-10 object-cover brightness-50 contrast-150"
+        className="h-screen w-screen -z-10 object-cover brightness-50 contrast-150 m-0 p-0"
       />
       <div className="container h-screen py-24 lg:py-32 flex items-center">
         <div className="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
-          <div>
+          <article>
             <h2 className="scroll-m-20 text-3xl mb-8">Hello I&apos;m Atakan</h2>
             <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
               FRONTEND DEVELOPER
@@ -28,10 +28,10 @@ export default function Main() {
               <Button size={"lg"}>Let&apos;s get started</Button>
             </div>
             <div className="mt-6 lg:mt-10 grid grid-cols-2 gap-x-5"></div>
-          </div>
+          </article>
           <div className="relative ms-4">
             <Image
-              className="w-full rounded-lg"
+              className="w-full"
               src="maincartoon.svg"
               alt="Image Description"
               width={500}
