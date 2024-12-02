@@ -12,7 +12,6 @@
 
 body {
   font-family: "Space Mono", Ubuntu, sans-serif;
-  scroll-behavior: smooth;
 }
 
 @layer base {
@@ -59,4 +58,8 @@ body {
   text-shadow:
     0 0 7px #0fa,
     0 0 21px #0fa;
+}
+
+* {
+  scroll-behavior: smooth;
 }

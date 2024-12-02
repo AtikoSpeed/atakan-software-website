@@ -3,7 +3,10 @@ import Image from "next/image";
 
 export default function Main() {
   return (
-    <main className="relative snap-always snap-start h-screen max-w-none w-screen">
+    <main
+      id="homepage"
+      className="relative snap-always snap-start h-screen max-w-none w-screen"
+    >
       <Image
         src="/nightsky.jpg"
         alt="Background Image"

@@ -1,3 +1,5 @@
+"use client";
+
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -5,39 +7,45 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import Link from "next/link";
+import ScrollInto from "react-scroll-into-view";
 
 export default function Nav() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
+          <ScrollInto
+            className="cursor-pointer select-none"
+            selector="#homepage"
+          >
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Home
             </NavigationMenuLink>
-          </Link>
+          </ScrollInto>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/Portfolio" legacyBehavior passHref>
+          <ScrollInto
+            className="cursor-pointer select-none"
+            selector="#portfolio"
+          >
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              İkin
+              Portfolio
             </NavigationMenuLink>
-          </Link>
+          </ScrollInto>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
+          <ScrollInto className="cursor-pointer select-none" selector="">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Üçün
             </NavigationMenuLink>
-          </Link>
+          </ScrollInto>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
+          <ScrollInto className="cursor-pointer select-none" selector="">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Sonun
             </NavigationMenuLink>
-          </Link>
+          </ScrollInto>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
