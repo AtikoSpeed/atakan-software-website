@@ -11,7 +11,7 @@ export default function Main() {
         src="/nightsky.jpg"
         alt="Background Image"
         fill={true}
-        className="h-screen w-screen -z-10 object-cover brightness-50 contrast-150 m-0 p-0"
+        className="h-screen w-screen -z-10 object-cover brightness-50 contrast-150 m-0 p-0 select-none"
       />
       <div className="container h-screen py-24 lg:py-32 flex items-center">
         <div className="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
@@ -32,7 +32,7 @@ export default function Main() {
             </div>
             <div className="mt-6 lg:mt-10 grid grid-cols-2 gap-x-5"></div>
           </article>
-          <div className="relative ms-4">
+          <div className="relative ms-4 select-none">
             <Image
               className="w-full"
               src="maincartoon.svg"

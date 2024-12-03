@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,7 +8,7 @@ import "swiper/css/effect-cards";
 
 export default function PortfolioSwiper() {
   return (
-    <div className="h-[60vh] w-[20vw]">
+    <div className="h-[60vh] w-[20vw] select-none">
       <Swiper
         effect="cards"
         grabCursor={true}
@@ -19,7 +20,6 @@ export default function PortfolioSwiper() {
             src="https://atakan.ninja/images/propic-full.jpg"
             alt="slide"
             className="w-full h-full object-cover"
-            href="https://atakan.ninja"
           />
         </SwiperSlide>
         <SwiperSlide className="rounded-lg ">
