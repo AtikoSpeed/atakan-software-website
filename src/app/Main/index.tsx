@@ -18,7 +18,7 @@ export default function Main() {
           <article>
             <h2 className="scroll-m-20 text-3xl mb-8">Hello I&apos;m Atakan</h2>
             <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-              FRONTEND DEVELOPER
+              FULL-STACK DEVELOPER
             </h1>
             <p className="mt-10 text-xl text-foreground">
               Crafting seamless, user-friendly interfaces with a passion for
