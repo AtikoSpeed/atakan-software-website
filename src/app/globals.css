@@ -53,11 +53,16 @@ body {
   }
 }
 
-.glow {
-  color: #ded;
+.neon {
+  color: #fff;
   text-shadow:
-    0 0 7px #0fa,
-    0 0 21px #0fa;
+    0 3px 7px #008cff,
+    0 -3px 7px #008cff,
+    3px 0 7px #008cff,
+    -3px 0 7px #008cff,
+    0 0 21px #008cff,
+    0 0 42px #008cff,
+    0 0 82px #008cff;
 }
 
 * {

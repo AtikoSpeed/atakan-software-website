@@ -44,9 +44,12 @@ export default function Nav() {
           </ScrollInto>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <ScrollInto className="cursor-pointer select-none" selector="">
+          <ScrollInto
+            className="cursor-pointer select-none"
+            selector="#contact"
+          >
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Sonun
+              Contact
             </NavigationMenuLink>
           </ScrollInto>
         </NavigationMenuItem>
