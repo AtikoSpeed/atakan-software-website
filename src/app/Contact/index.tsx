@@ -1,16 +1,12 @@
 "use client";
-
+import { logos } from "./logos";
 import Image from "next/image";
 import { motion } from "motion/react";
-
-const logos = [
-  { src: "logos/phone.svg", alt: "Phone", duration: 0.4 },
-  { src: "logos/whatsapp.svg", alt: "WhatsApp", duration: 0.5 },
-  { src: "logos/linkedin-in.svg", alt: "LinkedIn", duration: 0.6 },
-  { src: "logos/github.svg", alt: "GitHub", duration: 0.7 },
-  { src: "logos/discord.svg", alt: "Discord", duration: 0.8 },
-  { src: "logos/envelope.svg", alt: "Email", duration: 0.9 },
-];
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 
 export default function Contact() {
   return (
@@ -28,37 +24,48 @@ export default function Contact() {
         <h1 className="text-3xl justify-self-center h-1">Contact</h1>
         <ul className="grid grid-cols-6 grid-rows-1 items-center justify-center self-center list-none gap-8">
           {logos.map((logo, index) => (
-            <motion.li
-              key={index}
-              initial="hidden"
-              whileInView="visible"
-              whileHover="hover"
-              variants={{
-                visible: {
-                  opacity: 1,
-                  scale: 1,
-                  transition: {
-                    duration: logo.duration,
-                  },
-                },
-                hover: {
-                  scale: 1.3,
-                  transition: {
-                    type: "spring",
-                    stiffness: 400,
-                    damping: 10,
-                    duration: 0.3,
-                  },
-                },
-                hidden: {
-                  opacity: 0,
-                  scale: 0,
-                },
-              }}
-              className="select-none min-w-36"
-            >
-              <img src={logo.src} alt={logo.alt} />
-            </motion.li>
+            <Popover key={index}>
+              <PopoverTrigger asChild>
+                <motion.li
+                  key={index}
+                  initial="hidden"
+                  whileInView="visible"
+                  whileHover="hover"
+                  exit="hover"
+                  variants={{
+                    visible: {
+                      opacity: 1,
+                      scale: 1,
+                      transition: {
+                        duration: logo.duration,
+                      },
+                    },
+                    hover: {
+                      scale: 1.3,
+                      transition: {
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 10,
+                        duration: 0.3,
+                      },
+                    },
+                    hidden: {
+                      opacity: 0,
+                      scale: 0,
+                    },
+                  }}
+                  className="select-none min-w-36"
+                >
+                  <img src={logo.src} alt={logo.alt} />
+                </motion.li>
+              </PopoverTrigger>
+              <PopoverContent
+                side="top"
+                className="flex justify-center align-middle mb-1 size-min min-w-36"
+              >
+                <p>{logo.popover}</p>
+              </PopoverContent>
+            </Popover>
           ))}
         </ul>
       </div>
