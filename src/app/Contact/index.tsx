@@ -18,13 +18,12 @@ export default function Contact() {
       <div className="container flex flex-col items-center justify-center">
         <h1 className="scroll-m-20 text-3xl mb-8">Contact</h1>
         <div className="grid grid-cols-6 grid-rows-1 gap-10 items-center justify-center">
-          <FontAwesomeIcon icon={solid.faPhone} className="text-[#b0f]" />
-          <FontAwesomeIcon icon={brand.faWhatsapp} />
-          <FontAwesomeIcon icon={brand.faLinkedinIn} />
-          <FontAwesomeIcon icon={brand.faGithub} />
-          <FontAwesomeIcon icon={brand.faDiscord} />
-          <FontAwesomeIcon icon={solid.faEnvelope} />
-          holdatore place
+          <img className="min-w-36" src="logos/phone.svg" alt="" />
+          <img src="logos/whatsapp.svg" alt="" />
+          <img src="logos/linkedin-in.svg" alt="" />
+          <img src="logos/github.svg" alt="" />
+          <img src="logos/discord.svg" alt="" />
+          <img src="logos/envelope.svg" alt="" />
         </div>
       </div>
     </section>
