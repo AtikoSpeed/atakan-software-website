@@ -1,5 +1,30 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import { ArrowDown } from "lucide-react";
 import Image from "next/image";
+import { forwardRef } from "react";
+import ScrollInto from "react-scroll-into-view";
+
+const buttonForMotion = forwardRef<
+  HTMLButtonElement,
+  React.ComponentPropsWithoutRef<typeof Button>
+>(({ ...props }, ref) => {
+  return (
+    <Button ref={ref} {...props} size={"icon"} className="rounded-full size-16">
+      <ArrowDown />
+    </Button>
+  );
+});
+
+buttonForMotion.displayName = "ButtonForMotion"; // Add display name for React DevTools
+
+const MotionButton = motion.create(buttonForMotion);
+
+const logo = {
+  duration: 0.5,
+};
 
 export default function Main() {
   return (
@@ -21,16 +46,27 @@ export default function Main() {
               FULL-STACK DEVELOPER
             </h1>
             <p className="mt-10 text-xl text-foreground">
-              Crafting seamless, user-friendly interfaces with a passion for
-              modern web design and cutting-edge technologies. I specialize in
-              transforming ideas into responsive, dynamic websites that deliver
-              exceptional user experiences. Let&apos;s bring your vision to life
-              on the web!
+              A passionate full-stack developer specializing in modern web
+              technologies and cloud solutions.
+              <br />
+              <br />I craft robust, scalable applications using React, Next.js,
+              Node.js, and PostgreSQL, backed by solid DevOps practices with
+              Docker and Git. Let&apos;s turn your ideas into exceptional
+              digital experiences!
             </p>
-            <div className="mt-12 grid gap-3 w-full sm:inline-flex">
-              <Button size={"lg"}>Let&apos;s get started</Button>
+            <div className="mt-4 lg:mt-8 grid justify-end">
+              <ScrollInto
+                className="cursor-pointer select-none"
+                selector="#portfolio"
+              >
+                <MotionButton
+                  initial="visible"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 11 }}
+                />
+              </ScrollInto>
             </div>
-            <div className="mt-6 lg:mt-10 grid grid-cols-2 gap-x-5"></div>
           </article>
           <div className="relative ms-4 select-none">
             <Image

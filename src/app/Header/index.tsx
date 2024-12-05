@@ -9,6 +9,9 @@ export default function Header() {
             Atakan
           </h1>
         </div>
+        <div className="flex justify-end items-center py-6 font-bold text-red-600 text-2xl translate-x-12">
+          <h2>WORK IN PROGRESS!!</h2>
+        </div>
         <div className="flex justify-end items-center">
           <Nav />
         </div>

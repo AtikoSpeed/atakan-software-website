@@ -20,8 +20,13 @@ export default function TechStack() {
         fill={true}
         className="absolute h-screen w-screen -z-10 object-contain object-center brightness-90 m-0 p-0 select-none bg-black"
       />
-      <div className="grid grid-cols-1 grid-rows-[2rem,1fr] items-center self-center h-screen">
-        <h1 className="text-3xl justify-self-center h-1">My Tech Stack</h1>
+      <div className="max-w-[1440px] grid grid-cols-1 grid-rows-[2rem,1fr] items-center self-center h-screen">
+        <h1 className="text-3xl justify-self-center h-10">My Tech Stack</h1>
+        <p className="text-lg text-center justify-self-center">
+          From modern front-end frameworks to robust back-end solutions, my
+          toolkit enables me to build complete, production-ready applications. I
+          stay current with industry best practices and emerging technologies.
+        </p>
         <ul className="grid grid-cols-8 grid-rows-2 items-center justify-center self-end list-none gap-8">
           {logos.map((logo, index) => (
             <Popover key={index}>
@@ -52,7 +57,7 @@ export default function TechStack() {
                       scale: 0,
                     },
                   }}
-                  className="select-none w-36"
+                  className="select-none w-32"
                   onMouseOut={() => console.log("Mouse out")}
                 >
                   <img src={logo.src} alt={logo.alt} />
