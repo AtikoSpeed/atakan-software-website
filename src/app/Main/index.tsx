@@ -18,13 +18,9 @@ const buttonForMotion = forwardRef<
   );
 });
 
-buttonForMotion.displayName = "ButtonForMotion"; // Add display name for React DevTools
+buttonForMotion.displayName = "ButtonForMotion";
 
 const MotionButton = motion.create(buttonForMotion);
-
-const logo = {
-  duration: 0.5,
-};
 
 export default function Main() {
   return (
