@@ -1,6 +1,6 @@
 # Atakan's Personal Website
 
-This is the source code for my personal website and portfolio, which is planned to be live at [atakan.software](https://atakan.software).
+This is the source code for my personal website and portfolio, a demo of which is live at [atakan.software](https://atakan.software).
 
 ## Overview
 
