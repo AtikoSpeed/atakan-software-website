@@ -27,7 +27,7 @@ The site is currently under active development. Its current state might not refl
 - Social media links
 - Interactive UI components
 
-## Local Development
+## Running Locally
 
 ```bash
 # Install dependencies
