@@ -7,10 +7,12 @@ This is the source code for my personal website and portfolio, a demo of which i
 A modern, responsive personal website built with:
 
 - Next.js
+- React
 - TypeScript
 - Tailwind CSS
 - Shadcn UI Components
-- React
+- Motion (formerly Framer Motion)
+
 
 ## Current Status
 
@@ -20,9 +22,7 @@ The site is currently under active development. Its current state might not refl
 
 ## Planned Features
 
-- Portfolio showcase
 - Project gallery
-- Dark/Light theme toggle
 - Contact information
 - Social media links
 - Interactive UI components
