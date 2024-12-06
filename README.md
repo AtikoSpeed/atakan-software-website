@@ -16,7 +16,7 @@ A modern, responsive personal website built with:
 
 🚧 **Work in Progress** 🚧
 
-The site is currently under active development. A generic test page is currently live while core features are being implemented.
+The site is currently under active development. Its current state might not reflect the final product.
 
 ## Planned Features
 
